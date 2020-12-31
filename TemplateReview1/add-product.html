@@ -63,7 +63,7 @@
           <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="index.html#concept" class="nav-link">About</a></li>
               <li class="nav-item"><a href="products.html" class="nav-link">Our products</a></li>
               <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -71,13 +71,13 @@
         </div>
       </nav>
       <!-- END nav -->
-      <div class="hero-wrap hero-wrap-2" style="background-image: url('static/images/3.jpg');" data-stellar-background-ratio="0.5">
+      <div class="hero-wrap hero-wrap-2" style="background-image: url('static/images/800.jpeg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-end">
             <div class="col-md-9 ftco-animate pb-5">
-              <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p>
-              <h1 class="mb-0 bread">Contact us</h1>
+              <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Add Product <i class="fa fa-chevron-right"></i></span></p>
+              <h1 class="mb-0 bread">Add Product</h1>
             </div>
           </div>
         </div>
@@ -95,37 +95,54 @@
 
                     <form method="POST" id="contactForm" class="contactForm">
                       <div class="row">
+                        <div class="col-md-12"> 
+                          <div class="form-group">
+                          <select class="form-control">
+                            <option  selected>Category</option>
+                            <option value="Smartphones">Smartphones</option>
+                            <option value="Washers">Washers</option>
+                            <option value="PCs">PCs</option>
+                            <option value="TVs">TVs</option>
+                            <option value="Books">Books</option>
+                          
+                          </select>
+                          </div>  
+                        </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                        <input type="text" class="form-control" name="Username" id="username" placeholder="Username">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name of product">
                           </div>
                         </div>
-                         <div class="col-md-12"> 
+                        <div class="col-md-12">
                           <div class="form-group">
-                            <input type="password" class="form-control" name="password" id="" placeholder="Password">
-                          </div>
-                        </div>
-                           <div class="col-md-12"> 
-                          <div class="form-group">
-                            <input type="password" class="form-control" name="password" id="" placeholder="confirm password">
+                        <input type="text" class="form-control" name="brand" id="brand" placeholder="Brand of product">
                           </div>
                         </div>
                         <div class="col-md-12"> 
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
+                         
 
+                          <div class="custom-file mb-3" >  
+                            <div class="form-group">
+                            <input type="file" class="custom-file-input"  id="validatedCustomFile" required>
+                          </div>
+                            <label class="custom-file-label" for="validatedCustomFile">Add photo for your product...</label>
+                          </div>  
+                          </div>
+                          
+                       
+                          
+                       
+                        <div class="col-md-12"> 
                           <div class="form-group">
-                              
-                           <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone">
+                            <textarea class="form-control" name="description" id="description" placeholder="description"></textarea>
                           </div>
                         </div>
+                      
+                       
                           
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="submit" value="Sign up" class="btn btn-primary" class="sign-up">
+                            <input type="submit" value="Add product" class="btn btn-primary sign-up">
                             <div class="submitting"></div>
                           </div>
                         </div>
